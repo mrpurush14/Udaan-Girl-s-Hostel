@@ -192,26 +192,6 @@ export const FoodMenuSection: React.FC = () => {
 
               </div>
 
-              {/* Evening Tea & Snacks Banner */}
-              <div className="mt-6 bg-white/90 rounded-2xl p-4 border border-orange-200 flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center flex-shrink-0">
-                    <Coffee className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h5 className="text-sm font-bold text-stone-900">
-                      Evening Tea & Refreshment (5:30 – 6:30 PM)
-                    </h5>
-                    <p className="text-xs text-stone-600">
-                      Hot tea / coffee with fresh biscuits & light snacks after coaching classes.
-                    </p>
-                  </div>
-                </div>
-                <span className="hidden sm:inline-block text-xs font-bold text-orange-700 bg-orange-50 px-3 py-1 rounded-full border border-orange-200">
-                  Daily Refreshment
-                </span>
-              </div>
-
             </div>
           </div>
         )}

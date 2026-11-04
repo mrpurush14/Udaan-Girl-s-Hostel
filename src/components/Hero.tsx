@@ -38,14 +38,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreRooms }) => 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
               Experience the warmth of home with the discipline and security essential for academic success. 
-              Modern spacious rooms, 4-time hygienic food, 24x7 CCTV monitoring, high-speed Wi-Fi, and 100% power backup.
+              Modern spacious rooms, 3-time hygienic food, 24x7 CCTV monitoring, high-speed Wi-Fi, and 100% power backup.
             </p>
 
             {/* Bullet Proof Highlights */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1 text-left">
               {[
                 '24x7 CCTV & Warden',
-                'Hygienic 4-Time Meals',
+                'Hygienic 3-Time Meals',
                 '100% Power Backup',
                 'Fiber High-Speed Wi-Fi',
                 'Attached Washrooms',
@@ -170,7 +170,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreRooms }) => 
                       <div className="text-[10px] text-stone-500 font-medium leading-tight">Branches in Patna</div>
                     </div>
                     <div className="bg-white p-2.5 rounded-xl border border-stone-100 shadow-2xs">
-                      <div className="text-base font-extrabold text-emerald-600">4 Times</div>
+                      <div className="text-base font-extrabold text-emerald-600">3 Times</div>
                       <div className="text-[10px] text-stone-500 font-medium leading-tight">Homely Meals</div>
                     </div>
                     <div className="bg-white p-2.5 rounded-xl border border-stone-100 shadow-2xs">

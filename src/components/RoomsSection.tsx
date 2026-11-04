@@ -95,7 +95,7 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({ onBookRoom }) => {
             Thoughtfully Designed Rooms for Every Need
           </h2>
           <p className="mt-3 text-base sm:text-lg text-stone-600">
-            Every room includes 4-time fresh homely meals, high-speed fiber Wi-Fi, 100% generator/inverter power backup, attached sanitized washroom, and daily cleaning.
+            Every room includes 3-time fresh homely meals, high-speed fiber Wi-Fi, 100% generator/inverter power backup, attached sanitized washroom, and daily cleaning.
           </p>
 
           {/* Filter Pills */}
@@ -275,7 +275,7 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({ onBookRoom }) => {
                 100% Transparent Fee Policy • No Hidden Charges
               </h4>
               <p className="text-xs sm:text-sm text-stone-600">
-                All fees include 4 meals/day, high-speed Wi-Fi, electricity backup, laundry machine access, and daily room cleaning.
+                All fees include 3 meals/day, high-speed Wi-Fi, electricity backup, laundry machine access, and daily room cleaning.
               </p>
             </div>
           </div>

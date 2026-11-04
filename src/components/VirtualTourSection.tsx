@@ -125,11 +125,11 @@ const TOUR_SCENES: TourScene[] = [
   {
     id: 'dining-mess-hall',
     title: 'Hygienic Dining Mess & Kitchen',
-    subtitle: 'Fresh 4-Time Homely Meals',
+    subtitle: 'Fresh 3-Time Homely Meals',
     category: 'mess',
     panoramaImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2400&q=85',
     thumbnail: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=300&q=80',
-    description: 'Sanitized communal dining space where residents enjoy fresh, piping-hot vegetarian meals (Breakfast, Lunch, Evening Tea, Dinner) in a friendly atmosphere.',
+    description: 'Sanitized communal dining space where residents enjoy fresh, piping-hot vegetarian meals (Breakfast, Lunch, Dinner) in a friendly atmosphere.',
     hotspots: [
       {
         id: 'hs-ro',

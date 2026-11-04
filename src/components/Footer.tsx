@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Mail, Clock, ShieldCheck, Heart, Server } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Mail, Clock, ShieldCheck, Heart, Server, Facebook, Instagram } from 'lucide-react';
 import { HOSTEL_CONTACT, BRANCHES } from '../data/hostelData';
 
 interface FooterProps {
@@ -34,7 +34,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
 
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
               Patna's premier girls hostel located in prime Boring Road and North SK Puri. 
-              Providing high-speed Wi-Fi, 4-time hygienic homely meals, 24x7 CCTV monitoring, 100% power backup, 
+              Providing high-speed Wi-Fi, 3-time hygienic homely meals, 24x7 CCTV monitoring, 100% power backup, 
               and a peaceful study environment for students and working women.
             </p>
 
@@ -47,6 +47,30 @@ export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
                 <ShieldCheck className="w-4 h-4 text-rose-400 flex-shrink-0" />
                 <span>Gate Curfew: 8:00 PM (Strict safety protocol)</span>
               </div>
+            </div>
+
+            {/* Social Follow Links */}
+            <div className="pt-2 flex items-center gap-2.5">
+              <a
+                href={HOSTEL_CONTACT.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 bg-[#1877F2]/90 hover:bg-[#1877F2] text-white px-3 py-1.5 rounded-xl text-xs font-semibold transition-all hover:scale-105 shadow-xs"
+                title="Follow on Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5 fill-current" />
+                <span>Facebook</span>
+              </a>
+              <a
+                href={HOSTEL_CONTACT.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white px-3 py-1.5 rounded-xl text-xs font-semibold transition-all hover:scale-105 shadow-xs"
+                title="Follow on Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
 
@@ -127,6 +151,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
                     {BRANCHES[0].phone2}
                   </a>
                 </div>
+                <div className="pt-1">
+                  <a
+                    href={BRANCHES[0].googleMapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1 hover:underline text-[11px]"
+                  >
+                    <span>📍 Get Directions on Google Maps →</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -152,6 +186,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
                   {' / '}
                   <a href={`tel:${BRANCHES[1].phone2}`} className="text-amber-300 font-bold hover:underline">
                     {BRANCHES[1].phone2}
+                  </a>
+                </div>
+                <div className="pt-1">
+                  <a
+                    href={BRANCHES[1].googleMapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1 hover:underline text-[11px]"
+                  >
+                    <span>📍 Get Directions on Google Maps →</span>
                   </a>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, Menu, X, MapPin, Calendar, Shield, Sparkles } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, MapPin, Calendar, Shield, Sparkles, Facebook, Instagram } from 'lucide-react';
 import { HOSTEL_CONTACT, BRANCHES } from '../data/hostelData';
 
 interface NavbarProps {
@@ -34,39 +34,88 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenHostingerGu
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Announcement Bar */}
-      <div className="bg-[#931c51] text-white text-xs sm:text-sm py-1.5 px-4 shadow-inner">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 bg-[#c72c68] px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase">
-              <Sparkles className="w-3 h-3" /> Admissions Open
+      <div className="bg-[#931c51] text-white py-1.5 px-3 sm:px-6 shadow-inner border-b border-rose-900/40">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          
+          {/* Left: Admissions Info */}
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="inline-flex items-center gap-1 bg-[#c72c68] text-white px-2 sm:px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold tracking-wide uppercase flex-shrink-0 shadow-2xs">
+              <Sparkles className="w-3 h-3 text-amber-300" />
+              <span>Admissions Open</span>
             </span>
-            <span className="hidden md:inline text-rose-100">
+            <span className="hidden lg:inline text-rose-100 text-xs font-medium truncate">
               Safe, Homely & Disciplined Girls Hostel in Boring Road & North SK Puri, Patna
             </span>
-            <span className="md:hidden text-rose-100 font-medium truncate">
+            <span className="hidden sm:inline lg:hidden text-rose-100 text-xs font-medium truncate">
               Boring Road & SK Puri, Patna
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-xs">
+          {/* Right: Contact & Social Buttons - Completely Responsive Single Line */}
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 text-xs">
+            
+            {/* Phone Button */}
             <a
               href={`tel:${HOSTEL_CONTACT.primaryPhone}`}
-              className="flex items-center gap-1 font-semibold hover:text-amber-200 transition-colors"
+              className="flex items-center gap-1.5 font-bold hover:text-amber-200 transition-colors"
+              title="Call Admissions Helpline"
             >
-              <Phone className="w-3 h-3 text-amber-300" />
-              <span>{HOSTEL_CONTACT.displayPhone1}</span>
+              <span className="w-6 h-6 sm:w-auto sm:h-auto rounded-full bg-white/10 sm:bg-transparent flex items-center justify-center">
+                <Phone className="w-3 h-3 text-amber-300" />
+              </span>
+              <span className="hidden sm:inline">{HOSTEL_CONTACT.displayPhone1}</span>
+              <span className="sm:hidden text-[11px] font-bold text-amber-300">Call</span>
             </a>
-            <span className="text-rose-300 hidden sm:inline">|</span>
+
+            <span className="text-rose-400/50 hidden sm:inline">|</span>
+
+            {/* WhatsApp Link */}
             <a
               href={`https://wa.me/${HOSTEL_CONTACT.whatsappNumber}?text=Hello%20Udaan%20Girls%20Hostel%2C%20I%20want%20to%20inquire%20about%20room%20availability`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1 text-emerald-200 hover:text-emerald-100 font-medium transition-colors"
+              className="flex items-center gap-1.5 text-emerald-200 hover:text-emerald-100 font-semibold transition-colors"
+              title="Chat on WhatsApp"
             >
-              <MessageCircle className="w-3 h-3 text-emerald-300" />
-              <span>WhatsApp Us</span>
+              <span className="w-6 h-6 sm:w-auto sm:h-auto rounded-full bg-emerald-600 sm:bg-transparent flex items-center justify-center shadow-2xs">
+                <MessageCircle className="w-3 h-3 text-white sm:text-emerald-300 fill-white sm:fill-none" />
+              </span>
+              <span className="hidden sm:inline">WhatsApp</span>
             </a>
+
+            <span className="text-rose-400/50">|</span>
+
+            {/* Social Icons (Facebook & Instagram) - Sleek Touch Targets */}
+            <div className="flex items-center gap-1.5">
+              {/* Facebook Button */}
+              <a
+                href={HOSTEL_CONTACT.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-7 h-7 sm:w-auto sm:h-auto sm:px-2.5 sm:py-1 rounded-full bg-[#1877F2] hover:bg-[#166fe5] active:scale-95 text-white flex items-center justify-center gap-1 text-[11px] font-bold transition-all hover:scale-105 shadow-xs"
+                title="Follow on Facebook"
+                aria-label="Facebook Page"
+              >
+                <Facebook className="w-3.5 h-3.5 fill-current" />
+                <span className="hidden md:inline">Facebook</span>
+              </a>
+
+              {/* Instagram Button */}
+              <a
+                href={HOSTEL_CONTACT.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-7 h-7 sm:w-auto sm:h-auto sm:px-2.5 sm:py-1 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:opacity-95 active:scale-95 text-white flex items-center justify-center gap-1 text-[11px] font-bold transition-all hover:scale-105 shadow-xs"
+                title="Follow on Instagram"
+                aria-label="Instagram Profile"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+                <span className="hidden md:inline">Instagram</span>
+              </a>
+            </div>
+
           </div>
+
         </div>
       </div>
 
@@ -195,6 +244,28 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenHostingerGu
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>WhatsApp</span>
+                </a>
+              </div>
+
+              {/* Mobile Social Links */}
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={HOSTEL_CONTACT.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 bg-[#1877F2] text-white text-xs font-semibold py-2 rounded-xl hover:bg-[#166fe5] shadow-xs"
+                >
+                  <Facebook className="w-3.5 h-3.5 fill-current" />
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href={HOSTEL_CONTACT.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white text-xs font-semibold py-2 rounded-xl shadow-xs"
+                >
+                  <Instagram className="w-3.5 h-3.5" />
+                  <span>Instagram</span>
                 </a>
               </div>
 

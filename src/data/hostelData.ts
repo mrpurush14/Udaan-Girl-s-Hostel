@@ -9,7 +9,9 @@ export const HOSTEL_CONTACT = {
   email: 'udaangirlshostelpatna@gmail.com',
   openingHours: 'Visiting Hours: 9:00 AM – 7:30 PM (Daily)',
   curfewTime: '8:00 PM (Strict safety protocol)',
-  city: 'Patna, Bihar'
+  city: 'Patna, Bihar',
+  facebookUrl: 'https://www.facebook.com/share/1d8PSPfYzZ/',
+  instagramUrl: 'https://www.instagram.com/udaangirlshostel?psln=b3JpanVlc2syb240'
 };
 
 export const BRANCHES: BranchInfo[] = [
@@ -26,7 +28,7 @@ export const BRANCHES: BranchInfo[] = [
     whatsapp: '916209332827',
     featuredImg: '/assets/aistudio/hostel_banner_bd5711c2.jpeg',
     mapEmbedUrl: 'https://maps.google.com/maps?q=Om+Enclave+Shivpuri+Boring+Road+Patna&t=&z=15&ie=UTF8&iwloc=&output=embed',
-    googleMapLink: 'https://maps.google.com/?q=Om+Enclave+Shivpuri+Boring+Road+Patna',
+    googleMapLink: 'https://maps.app.goo.gl/hbWTjntVN6ynigX37',
     nearbyHighlights: [
       '2 Mins walk to Atal Path Expressway',
       '3 Mins to Carrier Planner & Allen Career Institute',
@@ -47,7 +49,7 @@ export const BRANCHES: BranchInfo[] = [
     whatsapp: '916209332827',
     featuredImg: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1000&q=80',
     mapEmbedUrl: 'https://maps.google.com/maps?q=Lal+Bahadur+Shastri+Marg+North+SK+Puri+Patna&t=&z=15&ie=UTF8&iwloc=&output=embed',
-    googleMapLink: 'https://maps.google.com/?q=Lal+Bahadur+Shastri+Marg+North+SK+Puri+Patna',
+    googleMapLink: 'https://maps.app.goo.gl/fV1nTusnH4Sm3Qbw6?g_st=aw',
     nearbyHighlights: [
       'Peaceful, VIP residential neighbourhood',
       'Next to Rahul Nursing Home (Immediate medical care)',
@@ -88,11 +90,11 @@ export const AMENITIES: Amenity[] = [
   {
     id: 'hygienic-food',
     title: 'Hygienic Homely Food',
-    subtitle: '4 Meals a Day Prepared with Love',
+    subtitle: '3 Fresh Meals a Day (Breakfast, Lunch, Dinner)',
     iconName: 'UtensilsCrossed',
-    badge: '4 Times/Day',
-    description: 'Delicious, freshly cooked pure vegetarian meals planned for active student minds: Healthy Breakfast, Wholesome Lunch, Evening Tea & Snacks, and Warm Dinner.',
-    highlight: 'Special Sunday feasts & sweet dishes included'
+    badge: '3 Times/Day',
+    description: 'Delicious, freshly cooked pure vegetarian meals planned for active student minds: Healthy Breakfast, Wholesome Afternoon Lunch, and Warm Homely Dinner.',
+    highlight: 'Special feasts & sweet dishes included'
   },
   {
     id: 'cctv-security',
@@ -157,7 +159,7 @@ export const ROOMS: RoomDetail[] = [
     occupancyName: '1 Resident',
     tag: 'Premium Privacy',
     startingPrice: '₹10,500',
-    priceNote: 'per month (Includes 4 Meals, Wi-Fi & Maintenance)',
+    priceNote: 'per month (Includes 3 Meals, Wi-Fi & Maintenance)',
     image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80',
     description: 'Ideal for serious aspirants who need absolute peace and privacy for competitive exam preparations (NEET, JEE, UPSC, Banking) or working professionals.',
     features: [
@@ -169,7 +171,7 @@ export const ROOMS: RoomDetail[] = [
       'Private balcony with natural daylight (select rooms)'
     ],
     bedType: '1 Single Bed with Storage',
-    amenitiesIncluded: ['AC / Non-AC Option', '4 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
+    amenitiesIncluded: ['AC / Non-AC Option', '3 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
     isPopular: false,
     availabilityStatus: 'limited',
     availabilityLabel: 'Limited Availability • Only 2 Rooms Left',
@@ -183,7 +185,7 @@ export const ROOMS: RoomDetail[] = [
     occupancyName: '2 Residents',
     tag: 'Most Popular',
     startingPrice: '₹8,500',
-    priceNote: 'per month per person (Includes 4 Meals & Wi-Fi)',
+    priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80',
     description: 'Our most sought-after room category! Spacious room balanced with mutual companionship and personal study desk for both roommates.',
     features: [
@@ -195,7 +197,7 @@ export const ROOMS: RoomDetail[] = [
       'Well ventilated with wide window and curtains'
     ],
     bedType: '2 Separate Single Beds',
-    amenitiesIncluded: ['AC / Non-AC Option', '4 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
+    amenitiesIncluded: ['AC / Non-AC Option', '3 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
     isPopular: true,
     availabilityStatus: 'filling-fast',
     availabilityLabel: 'Filling Fast • Only 3 Beds Remaining',
@@ -209,7 +211,7 @@ export const ROOMS: RoomDetail[] = [
     occupancyName: '3 Residents',
     tag: 'Budget & Friendly',
     startingPrice: '₹7,200',
-    priceNote: 'per month per person (Includes 4 Meals & Wi-Fi)',
+    priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
     description: 'Vibrant, economical, and comfortable setup for students who enjoy group discussions, peer motivation, and affordable luxury in Boring Road.',
     features: [
@@ -221,7 +223,7 @@ export const ROOMS: RoomDetail[] = [
       'Ceiling fans & optional AC unit'
     ],
     bedType: '3 Separate Single Beds',
-    amenitiesIncluded: ['AC / Non-AC Option', '4 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
+    amenitiesIncluded: ['AC / Non-AC Option', '3 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
     isPopular: false,
     availabilityStatus: 'few-beds-left',
     availabilityLabel: 'Few Beds Left • 4 Remaining for 2026 Batch',
@@ -235,7 +237,7 @@ export const ROOMS: RoomDetail[] = [
     occupancyName: '4 Residents',
     tag: 'Best Value',
     startingPrice: '₹6,200',
-    priceNote: 'per month per person (Includes 4 Meals & Wi-Fi)',
+    priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&fit=crop&w=800&q=80',
     description: 'Designed specifically for budget-conscious students with no compromise on security, food quality, hygiene, or Wi-Fi speed.',
     features: [
@@ -247,7 +249,7 @@ export const ROOMS: RoomDetail[] = [
       'Affordable all-inclusive fee package'
     ],
     bedType: '4 Separate Beds',
-    amenitiesIncluded: ['Non-AC / Cooler Option', '4 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
+    amenitiesIncluded: ['Non-AC / Cooler Option', '3 Meals Included', 'High-speed Wi-Fi', 'Power Backup', 'Daily Housekeeping'],
     isPopular: false,
     availabilityStatus: 'filling-fast',
     availabilityLabel: 'Filling Fast • Best Value Seats',
@@ -284,7 +286,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Hygienic Dining Hall & Mess Area',
     category: 'dining',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
-    caption: 'Clean, sanitized dining hall serving fresh, hot 4-time homely meals prepared by experienced chefs.'
+    caption: 'Clean, sanitized dining hall serving fresh, hot 3-time homely meals prepared by experienced chefs.'
   },
   {
     id: 'g5',
@@ -398,12 +400,12 @@ export const FAQS: FAQItem[] = [
   {
     category: 'food',
     question: 'How many meals are served, and is the food hygienic?',
-    answer: 'We provide 4 fresh, homely meals every day: Breakfast (8:00 AM – 9:30 AM), Lunch (1:00 PM – 2:30 PM), Evening Snacks with Tea (5:30 PM – 6:30 PM), and Dinner (8:30 PM – 10:00 PM). Our kitchen maintains strict hygiene, uses filtered water for cooking, fresh daily vegetables, and offers special Sunday feasts and sweet dishes.'
+    answer: 'We provide 3 fresh, homely meals every day: Breakfast (8:00 AM – 9:30 AM), Lunch (1:00 PM – 2:30 PM), and Dinner (8:30 PM – 10:00 PM). Our kitchen maintains strict hygiene, uses filtered water for cooking, fresh daily vegetables, and offers special Sunday feasts and sweet dishes.'
   },
   {
     category: 'facilities',
     question: 'What is included in the monthly fee?',
-    answer: 'The monthly fee is comprehensive and covers: 4 daily meals, electricity with 100% power backup (inverter & generator), high-speed unlimited Wi-Fi, 24x7 hot/cold running water, RO drinking water, automatic washing machine use, and daily room housekeeping. There are no hidden maintenance charges.'
+    answer: 'The monthly fee is comprehensive and covers: 3 daily meals, electricity with 100% power backup (inverter & generator), high-speed unlimited Wi-Fi, 24x7 hot/cold running water, RO drinking water, automatic washing machine use, and daily room housekeeping. There are no hidden maintenance charges.'
   },
   {
     category: 'facilities',
@@ -456,7 +458,7 @@ export const TESTIMONIALS: Testimonial[] = [
     courseOrCollege: 'Career Planner Student',
     branch: 'Boring Road Branch (Om Enclave)',
     rating: 5,
-    comment: 'Literally next door to Career Planner! Power backup is seamless during power cuts, and the 4-time meals keep our energy up for 12 hours of studying. The warden aunty is very caring.',
+    comment: 'Literally next door to Career Planner! Power backup is seamless during power cuts, and the 3-time meals keep our energy up for 12 hours of studying. The warden aunty is very caring.',
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80'
   }
 ];

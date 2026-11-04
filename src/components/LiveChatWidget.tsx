@@ -49,7 +49,7 @@ export const LiveChatWidget: React.FC<{ onOpenBooking: () => void }> = ({ onOpen
   const quickPrompts = [
     {
       label: '💰 Room Fees & Sharing',
-      answer: 'Our all-inclusive fees start from ₹6,200/mo (4-sharing), ₹7,200/mo (triple sharing), ₹8,500/mo (double sharing), and ₹10,500/mo (single deluxe). All rates include 4 daily meals, Wi-Fi, 100% power backup, and housekeeping with zero brokerage!'
+      answer: 'Our all-inclusive fees start from ₹6,200/mo (4-sharing), ₹7,200/mo (triple sharing), ₹8,500/mo (double sharing), and ₹10,500/mo (single deluxe). All rates include 3 fresh daily meals (Breakfast, Lunch, Dinner), Wi-Fi, 100% power backup, and housekeeping with zero brokerage!'
     },
     {
       label: '🍲 Food Menu & Timings',
@@ -94,9 +94,9 @@ export const LiveChatWidget: React.FC<{ onOpenBooking: () => void }> = ({ onOpen
       };
 
       if (lower.includes('fee') || lower.includes('price') || lower.includes('rent') || lower.includes('cost')) {
-        botReply = "Our monthly fees range from ₹6,200 to ₹10,500 depending on single, double, or triple sharing (with AC or Non-AC options). All packages include 4 meals, Wi-Fi, electricity backup, and laundry machine access!";
+        botReply = "Our monthly fees range from ₹6,200 to ₹10,500 depending on single, double, or triple sharing (with AC or Non-AC options). All packages include 3 fresh daily meals, Wi-Fi, electricity backup, and laundry machine access!";
       } else if (lower.includes('food') || lower.includes('mess') || lower.includes('meal') || lower.includes('lunch') || lower.includes('dinner')) {
-        botReply = "We provide 4 fresh meals daily (Breakfast, Lunch, Evening Snacks & Tea, and Dinner) with special Sunday dishes and pure RO drinking water!";
+        botReply = "We provide 3 fresh, hygienic meals daily (Breakfast, Lunch, and Dinner) with special Sunday dishes and pure RO drinking water!";
       } else if (lower.includes('gate') || lower.includes('curfew') || lower.includes('time') || lower.includes('safe') || lower.includes('security')) {
         botReply = "Hostel gate closes at 8:00 PM. We have on-site female wardens, biometric logging, and 24x7 CCTV monitoring throughout the premises.";
       } else if (lower.includes('visit') || lower.includes('see') || lower.includes('book') || lower.includes('room')) {
