@@ -17,6 +17,7 @@ import { NearbyLandmarks } from './components/NearbyLandmarks';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { BookingForm } from './components/BookingForm';
 import { FAQSection } from './components/FAQSection';
+import { SeoGuideSection } from './components/SeoGuideSection';
 import { LiveChatWidget } from './components/LiveChatWidget';
 import { MobileBottomBar } from './components/MobileBottomBar';
 import { HostingerGuideModal } from './components/HostingerGuideModal';
@@ -101,14 +102,17 @@ export default function App() {
           initialBranch={selectedBranchForBooking}
         />
 
+        {/* Local Patna Student Accommodation Guide & Proximity SEO Section */}
+        <SeoGuideSection
+          onOpenBooking={() => scrollToBooking()}
+        />
+
         {/* Frequently Asked Questions */}
         <FAQSection />
       </main>
 
       {/* Footer */}
-      <Footer
-        onOpenHostingerGuide={() => setIsHostingerModalOpen(true)}
-      />
+      <Footer />
 
       {/* Interactive Live Chat Support Widget */}
       <LiveChatWidget

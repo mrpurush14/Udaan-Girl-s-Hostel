@@ -158,7 +158,7 @@ export const ROOMS: RoomDetail[] = [
     type: 'Single Occupancy Room',
     occupancyName: '1 Resident',
     tag: 'Premium Privacy',
-    startingPrice: '₹10,500',
+    startingPrice: '₹8,000',
     priceNote: 'per month (Includes 3 Meals, Wi-Fi & Maintenance)',
     image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80',
     description: 'Ideal for serious aspirants who need absolute peace and privacy for competitive exam preparations (NEET, JEE, UPSC, Banking) or working professionals.',
@@ -184,7 +184,7 @@ export const ROOMS: RoomDetail[] = [
     type: 'Double Sharing Room',
     occupancyName: '2 Residents',
     tag: 'Most Popular',
-    startingPrice: '₹8,500',
+    startingPrice: '₹7,500',
     priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80',
     description: 'Our most sought-after room category! Spacious room balanced with mutual companionship and personal study desk for both roommates.',
@@ -210,7 +210,7 @@ export const ROOMS: RoomDetail[] = [
     type: 'Triple Sharing Room',
     occupancyName: '3 Residents',
     tag: 'Budget & Friendly',
-    startingPrice: '₹7,200',
+    startingPrice: '₹6,500',
     priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
     description: 'Vibrant, economical, and comfortable setup for students who enjoy group discussions, peer motivation, and affordable luxury in Boring Road.',
@@ -236,7 +236,7 @@ export const ROOMS: RoomDetail[] = [
     type: 'Four Sharing Economical Room',
     occupancyName: '4 Residents',
     tag: 'Best Value',
-    startingPrice: '₹6,200',
+    startingPrice: '₹6,000',
     priceNote: 'per month per person (Includes 3 Meals & Wi-Fi)',
     image: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&fit=crop&w=800&q=80',
     description: 'Designed specifically for budget-conscious students with no compromise on security, food quality, hygiene, or Wi-Fi speed.',
@@ -404,8 +404,8 @@ export const FAQS: FAQItem[] = [
   },
   {
     category: 'facilities',
-    question: 'What is included in the monthly fee?',
-    answer: 'The monthly fee is comprehensive and covers: 3 daily meals, electricity with 100% power backup (inverter & generator), high-speed unlimited Wi-Fi, 24x7 hot/cold running water, RO drinking water, automatic washing machine use, and daily room housekeeping. There are no hidden maintenance charges.'
+    question: 'What is included in the monthly fee and what are the room charges?',
+    answer: 'Our all-inclusive fees start at ₹6,000/mo (4-sharing), ₹6,500/mo (triple sharing), ₹7,500/mo (double sharing), and ₹8,000/mo (single deluxe). The monthly fee includes 3 fresh daily meals, 100% power backup (inverter & generator), high-speed unlimited Wi-Fi, 24x7 running water, RO drinking water, washing machine access, and daily room housekeeping with zero brokerage.'
   },
   {
     category: 'facilities',
@@ -414,8 +414,18 @@ export const FAQS: FAQItem[] = [
   },
   {
     category: 'admissions',
-    question: 'Which coaching institutes and colleges are nearby?',
+    question: 'Which coaching institutes and colleges are nearby in Boring Road?',
     answer: 'Both branches are in prime locations. Branch 1 (Boring Road - Om Enclave) is within 2–5 minutes of Allen Career Institute, Carrier Planner, Resonance, Aakash Institute, and Boring Road Chauraha. Branch 2 (North SK Puri) is situated close to Patna Women\'s College, Rahul Nursing Home, and Bailey Road.'
+  },
+  {
+    category: 'admissions',
+    question: 'Why is Udaan rated the best Hostel for Girls and PG in Patna?',
+    answer: 'Udaan Girls Hostel & PG has earned a 4.9-star rating among parents and students for its spotless cleanliness, reliable 3-time nutritious meals, 24x7 on-premise female warden security, peaceful study environment, and strategic walking distance to premier coaching institutes in Boring Road Patna.'
+  },
+  {
+    category: 'admissions',
+    question: 'Do you offer guidance for Boys Hostel in Patna or PG for boys?',
+    answer: 'Udaan is strictly and exclusively a safe, secure hostel and PG for girls with strict no-male-visitor policies on resident floors. However, for visiting families with both daughters and sons studying in Patna, our admissions counseling desk gladly shares verified contacts and guidance for trusted boys hostels and boys PGs near Boring Road.'
   },
   {
     category: 'security',

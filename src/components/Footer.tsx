@@ -1,12 +1,12 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Mail, Clock, ShieldCheck, Heart, Server, Facebook, Instagram } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Mail, Clock, ShieldCheck, Heart, Facebook, Instagram } from 'lucide-react';
 import { HOSTEL_CONTACT, BRANCHES } from '../data/hostelData';
 
 interface FooterProps {
-  onOpenHostingerGuide: () => void;
+  onOpenHostingerGuide?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
+export const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="bg-stone-950 text-stone-300 pt-16 pb-24 md:pb-16 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,21 +204,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenHostingerGuide }) => {
 
         </div>
 
-        {/* Bottom Sub-Footer with Hostinger Guide & Copyright */}
+        {/* Bottom Sub-Footer with Copyright & Verified Student Tag */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Udaan Girls' Hostel, Patna. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Udaan Girls' Hostel & PG, Patna. All rights reserved.</p>
 
-          <div className="flex items-center gap-4">
-            <button
-              onClick={onOpenHostingerGuide}
-              className="inline-flex items-center gap-1.5 bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-white px-3 py-1.5 rounded-lg border border-stone-800 transition-colors cursor-pointer"
-            >
-              <Server className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Hostinger Deployment Guide</span>
-            </button>
-
-            <span className="text-stone-600 hidden sm:inline">|</span>
-            <span className="flex items-center gap-1">
+          <div className="flex items-center gap-3">
+            <span className="text-stone-400">Patna's Premier Girls Hostel & PG</span>
+            <span className="text-stone-600 hidden sm:inline">•</span>
+            <span className="text-rose-300/80 font-medium">
               "Your Comfort • Our Priority"
             </span>
           </div>
