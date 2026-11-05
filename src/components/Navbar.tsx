@@ -136,11 +136,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenHostingerGu
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-extrabold text-[#931c51] tracking-tight leading-tight font-['Playfair_Display',serif]">
-                  Udaan <span className="text-[#c72c68] font-sans font-bold text-lg md:text-xl">Girls' Hostel</span>
+                  Udaan <span className="text-[#c72c68] font-sans font-bold text-lg md:text-xl">Hostels Patna</span>
                 </span>
                 <span className="text-[11px] md:text-xs text-stone-500 font-medium flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
-                  Safe Stay • Bright Future • Homely Care
+                  <span className="text-[#931c51] font-bold">Girls' Hostel & PG</span> • Boring Road & SK Puri
                 </span>
               </div>
             </a>

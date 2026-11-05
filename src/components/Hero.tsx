@@ -20,10 +20,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreRooms }) => 
           {/* Left Column: Value Proposition & CTAs */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Trust Pill */}
-            <div className="inline-flex items-center gap-2 bg-rose-100/80 border border-rose-200 text-[#931c51] px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-xs">
+            {/* Trust & Official Domain Pill */}
+            <div className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 bg-rose-100/80 border border-rose-200 text-[#931c51] px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-xs">
               <ShieldCheck className="w-4 h-4 text-[#c72c68]" />
-              <span>Safe Stay • Bright Future • Your Comfort Our Priority</span>
+              <span>Official Website: <strong>udaanhostels.online</strong> • Safe Stay & Bright Future</span>
             </div>
 
             {/* Main Headline */}
