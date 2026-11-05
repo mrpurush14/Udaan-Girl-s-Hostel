@@ -204,9 +204,9 @@ export const Footer: React.FC<FooterProps> = () => {
 
         </div>
 
-        {/* Bottom Sub-Footer with Copyright & Verified Student Tag */}
+        {/* Bottom Sub-Footer with Copyright & Domain */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Udaan Girls' Hostel & PG, Patna. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Udaan Hostels Patna (<span className="text-stone-400 font-medium">udaanhostels.online</span>). All rights reserved.</p>
 
           <div className="flex items-center gap-3">
             <span className="text-stone-400">Patna's Premier Girls Hostel & PG</span>

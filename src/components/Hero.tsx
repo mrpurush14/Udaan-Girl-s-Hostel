@@ -28,11 +28,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreRooms }) => 
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight leading-[1.15]">
-              Premium Girls' Hostel in{' '}
+              Udaan Hostels Patna •{' '}
               <span className="bg-gradient-to-r from-[#931c51] via-[#c72c68] to-rose-700 bg-clip-text text-transparent">
-                Boring Road & SK Puri
-              </span>
-              , Patna
+                Girls' Hostel & PG
+              </span>{' '}
+              in Boring Road & SK Puri
             </h1>
 
             {/* Sub-headline */}

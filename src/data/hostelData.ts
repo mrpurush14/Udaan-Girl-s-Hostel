@@ -419,13 +419,13 @@ export const FAQS: FAQItem[] = [
   },
   {
     category: 'admissions',
-    question: 'Why is Udaan rated the best Hostel for Girls and PG in Patna?',
-    answer: 'Udaan Girls Hostel & PG has earned a 4.9-star rating among parents and students for its spotless cleanliness, reliable 3-time nutritious meals, 24x7 on-premise female warden security, peaceful study environment, and strategic walking distance to premier coaching institutes in Boring Road Patna.'
+    question: 'Why is Udaan Hostels Patna rated #1 among hostels in Patna?',
+    answer: 'Udaan Hostels Patna (udaanhostels.online) has earned a 4.9-star rating among parents and students for its spotless cleanliness, reliable 3-time nutritious meals, 24x7 on-premise female warden security, peaceful study environment, and strategic walking distance to premier coaching institutes in Boring Road Patna.'
   },
   {
     category: 'admissions',
-    question: 'Do you offer guidance for Boys Hostel in Patna or PG for boys?',
-    answer: 'Udaan is strictly and exclusively a safe, secure hostel and PG for girls with strict no-male-visitor policies on resident floors. However, for visiting families with both daughters and sons studying in Patna, our admissions counseling desk gladly shares verified contacts and guidance for trusted boys hostels and boys PGs near Boring Road.'
+    question: 'Do you offer guidance for Udaan boys hostels or Boys Hostel in Patna?',
+    answer: 'Our residential properties operate strictly as Udaan Girls Hostel & PG with strict no-male-visitor policies on resident floors to maintain 100% security. However, for visiting families with both daughters and sons studying in Patna, our admissions counseling desk gladly shares verified contacts and guidance for trusted Udaan boys hostels and boys PGs near Boring Road.'
   },
   {
     category: 'security',
